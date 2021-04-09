@@ -45,36 +45,55 @@ console.log(arr[1]);*/
 
 //ІНТЕРПОЛЯЦІЯ
 
-const category = 'toys';
+//const category = 'toys';
 
-console.log(`https://someurl.com/${category}/5`);
+//console.log(`https://someurl.com/${category}/5`);
 
-const user="ivan";
-alert(`privet, ${user}`);
+//const user="ivan";
+//alert(`privet, ${user}`);
 
 //ОПЕРАТОРИ
 
-console.log(4 + "5");
+//console.log(4 + "5");
 
-let incr = 10,
-    decr = 10;
+//let incr = 10,
+  //  decr = 10;
 
 //ПОСТФІКС ПРЕФІКС
 
 // ++incr;
 // --decr
 
-console.log(incr);
-console.log(decr);
+//console.log(incr);
+//console.log(decr);
 
 
-console.log(5%2);
-console.log(2 + 2 * 2 === '8');
+//console.log(5%2);
+//console.log(2 + 2 * 2 === '8');
 
 // OPERATORU && ||
 
-const isCheked = true,
-      isClosed = false;
+//const isCheked = true,
+  //    isClosed = false;
 
-console.log(isCheked && !isClosed);
-      
+//console.log(isCheked && !isClosed);
+    
+const numberOfFilms = +prompt('Скільки фільмів ви подивились?', '');
+
+const personalMovies = {
+  count: numberOfFilms,
+  movies: {},
+  actors: {},
+  genres: [],
+  privat: false
+};
+
+const a = prompt('Один з переглянутих фільмів'),
+      b = prompt('На скільки оцінити цей фільм'),
+      c = prompt('Один з переглянутих фільмів'),
+      d = prompt('На скільки оцінити цей фільм');
+
+      personalMovies.movies[a] = b;
+      personalMovies.movies[c] = d;
+
+      console.log(personalMovies);
